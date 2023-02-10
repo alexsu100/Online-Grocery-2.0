@@ -1,0 +1,81 @@
+html {
+    background-image: url(Wallpaper.png); /* white for now in case you add img background*/
+    background-repeat: repeat;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0px 40px;
+    color: black;
+    text-shadow: 2px 2px 1px grey;
+}
+
+.center {
+    text-align: center;
+    font: italic;
+}
+
+.survey {
+    margin: auto;
+    width: 960px; /* same size as img*/
+    text-align: left;
+    border-radius: 5px;
+    background-color: #d6d6d6; /* this changes survey background*/
+    padding: 20px 20px 20px 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+input[type=text], select , textarea{
+    border-radius: 3px;
+    border: 1px solid rgb(116, 116, 116);
+}
+
+.signature {
+    text-align: right;
+    font-size: 2px;
+    padding-right: 20px;
+    font-style: italic;
+}
+
+.image-gallery {
+    width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+  
+.images {
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Circular buttons for image gallery */
+.image-gallery > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;  
+    background: #d6d6d6;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 0 0;
+    position: relative;
+}
+
+/* Same width for all textboxes for visual esthetics */
+.same-width {
+    width: 400px;
+}
